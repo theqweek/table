@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+}
+
+.pagination_item {
+  list-style-type: none;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid rgb(150, 150, 150);
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .6;
+  background-color: lightgray;
+}
+
+.pagination_item:hover:not(.active) {
+  background-color: #ddd;
+}
